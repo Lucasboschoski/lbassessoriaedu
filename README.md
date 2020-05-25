@@ -1,2 +1,2 @@
-# http://lbassessoriaedu
+#lbassessoriaedu
 LB Assessoria Educacional
