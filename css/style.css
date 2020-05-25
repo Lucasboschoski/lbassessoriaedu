@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #afe9c6;
+    background-size: auto 100vh;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 10px;
+    height: 100px;
+}
+
+@media (min-width: 240px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    color: black;
+    z-index: 2;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color .5s, color .5s;
+}
+
+.menu a:hover {
+    background-color: #afe9c6;
+    color: white;
+}
+
+
+a {
+    color: #484537;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.titulo {
+    transform: scale(.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Rochester', cursive;
+}
+
+.site-title,
+.site-subtitle {
+    color: #484537;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+
+    line-height: 1.8em;
+}
+
+.apresentacao {
+    background-color: #04bd98;
+    padding: 2em;
+
+}
+
+.apresentacao h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.7em;
+    text-align: center;
+    color: #484537;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.apresentacao h4 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.1em;
+    text-align: center;
+    color: #484537;
+    margin-bottom: 1.5em;
+
+}
+
+
+.sobre h6,
+.elaboracao h6,
+.acompanhamento h6,
+.auxilio h6 {
+
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    font-size: 1.1em;
+    color: #484537;
+    margin-bottom: 1.1em;
+}
+
+.sobre,
+.elaboracao,
+.acompanhamento,
+.auxilio {
+    padding: 2.4em;
+
+}
+
+.sobre p,
+.elaboracao p,
+.acompanhamento p,
+.auxilio p {
+    color: #484537;
+    margin-bottom: .4em;
+    text-indent: 1.6em;
+    text-align: justify;
+    font-family: Arial;
+}
+
+.sobre .logo {
+    float: right;
+}
+
+img.logo {
+    width: 260px;
+    height: 260px;
+    margin-left: 1.3em;
+    margin-bottom: 1.3em;
+}
+
+
+.portfolio {
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    font-size: 1.1em;
+    color: #484537;
+    margin-bottom: 1.1em;
+    padding: 2em;
+}
+
+
+.leg1 h6{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: left;
+    margin-bottom: 1.1em;
+    font-size: 1.1em;
+    color: #484537;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+@media (min-width: 620px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 890px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 240px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(4, 240px);
+        justify-content: center;
+    }
+}
+
+.img-folder {
+    text-align: center;
+    height: 303px;
+    width: 224px;
+    transition: transform 500ms;
+}
+
+.img-folder:hover {
+    transform: scale(1.9);
+
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato h6 {
+    padding: 1.1em;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.1em;
+    text-align: center;
+    color: #484537;
+}
+
+.contato a {
+
+    color: whitesmoke;
+    font-size: 2.5em;
+    text-align: center;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
